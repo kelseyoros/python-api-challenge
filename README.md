@@ -9,6 +9,7 @@ To analyze the weather, I first made a series of scatter plots to showcase the f
 * Humidity (%) vs. Latitude
 * Cloudiness (%) vs. Latitude
 * Wind Speed (mph) vs. Latitude
+
 <img src="https://github.com/kelseyoros/python-api-challenge/blob/master/images/LatVsTemp.JPG" width="350"> <img src="https://github.com/kelseyoros/python-api-challenge/blob/master/images/LatVsHumidity.JPG" width="350">
 <img src="https://github.com/kelseyoros/python-api-challenge/blob/master/images/LatVsCloudiness.JPG" width="350"> <img src="https://github.com/kelseyoros/python-api-challenge/blob/master/images/LatVsWind.JPG" width="350">
 
