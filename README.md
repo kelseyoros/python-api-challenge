@@ -9,7 +9,8 @@ To analyze the weather, I first made a series of scatter plots to showcase the f
 * Humidity (%) vs. Latitude
 * Cloudiness (%) vs. Latitude
 * Wind Speed (mph) vs. Latitude
-<img src="https://cloud.githubusercontent.com/assets/yourgif.gif" width="350">
+<img src="https://github.com/kelseyoros/python-api-challenge/blob/master/images/LatVsTemp.JPG" width="350"> <img src="https://github.com/kelseyoros/python-api-challenge/blob/master/images/LatVsHumidity.JPG" width="350">
+<img src="https://github.com/kelseyoros/python-api-challenge/blob/master/images/LatVsCloudiness.JPG" width="350"> <img src="https://github.com/kelseyoros/python-api-challenge/blob/master/images/LatVsWind.JPG" width="350">
 
 
 Your second requirement is to run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
