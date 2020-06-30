@@ -14,24 +14,30 @@ To analyze the weather, I first made a series of scatter plots to showcase the f
 <img src="https://github.com/kelseyoros/python-api-challenge/blob/master/images/LatVsCloudiness.JPG" width="350"> <img src="https://github.com/kelseyoros/python-api-challenge/blob/master/images/LatVsWind.JPG" width="350">
 
 
-Your second requirement is to run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
+I then separated the same information into Northern Hemisphere and Southern Hemisphere and ran linear regression on each relationship.  Here is an example of the result:
 
-* Northern Hemisphere - Temperature (F) vs. Latitude
-* Southern Hemisphere - Temperature (F) vs. Latitude
-* Northern Hemisphere - Humidity (%) vs. Latitude
-* Southern Hemisphere - Humidity (%) vs. Latitude
-* Northern Hemisphere - Cloudiness (%) vs. Latitude
-* Southern Hemisphere - Cloudiness (%) vs. Latitude
-* Northern Hemisphere - Wind Speed (mph) vs. Latitude
-* Southern Hemisphere - Wind Speed (mph) vs. Latitude
+<img src="https://github.com/kelseyoros/python-api-challenge/blob/master/images/LatVsTempNorthHem.JPG" width="350"> <img src="https://github.com/kelseyoros/python-api-challenge/blob/master/images/LatVsTempSouthHem.JPG" width="350">
 
-After each pair of plots explain what the linear regression is modeling such as any relationships you notice and any other analysis you may have.
 
-**Optional** You will be creating multiple linear regression plots. To optimize your code, write a function that creates the linear regression plots.
+##
+### Part II - VacationPy
 
-Your final notebook must:
+To plan future vacations, I used jupyter-gmaps and the Google Places API to complete the following:
 
-* Randomly select **at least** 500 unique (non-repeat) cities based on latitude and longitude.
-* Perform a weather check on each of the cities using a series of successive API calls.
-* Include a print log of each city as it's being processed with the city number and city name.
-* Save a CSV of all retrieved data and a PNG image for each scatter plot.
+* A heat map that displays the humidity for every city from the part I of the homework.
+
+* Narrowed down the DataFrame to find my ideal weather condition:
+
+  * A max temperature lower than 80 degrees but higher than 70.
+
+  * Wind speed less than 10 mph.
+
+  * Zero cloudiness.
+
+  * Dropped any rows that don't contain all three conditions.
+
+* Used Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
+
+* Plotted the hotels on top of the humidity heatmap with each pin containing the Hotel Name, City, and Country.
+
+<img src="https://github.com/kelseyoros/python-api-challenge/blob/master/images/hotel_map.png" width="700">
